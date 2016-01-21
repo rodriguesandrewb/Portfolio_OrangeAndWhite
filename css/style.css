@@ -1,0 +1,546 @@
+body {
+	font-family: arial;
+	line-height: 1.6;
+}
+
+/********************** POSITIONING **********************/
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.clear::after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.rightAlign, .ra {
+	text-align: right;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.pad {
+	padding: 0 20px;
+}
+
+.moreBlack {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+.moreBlack:hover {
+	color: #CCC;
+}
+
+.moreWhite {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+/********************** TYPOGRAPHY **********************/
+h4 {
+	font-size: 22px;
+}
+
+p {
+	line-height: 2;
+	text-align: justify;
+}
+
+.centerText > h3 {
+	margin-top: 50px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h3 + p {
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+}
+
+/********************** BACKGROUNDS **********************/
+#mainTop {
+	background: red url(../images/mainTop.jpg);
+	/*background: black;*/
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+
+#myWork {
+	background: orange url(../images/15.jpg);
+	/*background: #333;*/
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+
+#contact {
+	background: orange url(../images/10.jpg);
+	background-size: cover;
+	/*background: #FF931E;*/
+	/*background-attachment: fixed;*/
+}
+
+/********************** COLORS **********************/
+.dftBkg {
+	background: #FF931E;
+}
+
+.dftText {
+	color: #FF931E;
+}
+
+.altText {
+	color: black;
+}
+
+.altBkg {
+	background: black;
+}
+
+.whiteText {
+	color: white;
+}
+
+.orangeText {
+	color: #FF931E!important;
+}
+
+.blackText {
+	color: black;
+}
+
+.orangeBox {
+	display: inline-block;
+	border: 1px solid #FF931E;
+	padding: 10px;
+	color: #FF931E;
+	text-decoration: none;
+}
+
+.whiteBox {
+	display: inline-block;
+	border: 1px solid white;
+	padding: 10px;
+	color: white;
+}
+
+.blackBox {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px;
+	color: black;
+}
+
+.whiteHoverBox:hover {
+	color: white;
+	border: 1px solid white;
+}
+
+.blackHoverBox:hover {
+	color: black;
+	border: 1px solid black;
+}
+
+.orangeHoverBox:hover {
+	color: #FF931E;
+	border: 1px solid #FF931E;
+}
+
+/********************** NAVIGATION & MAINTOP **********************/
+#myIntro {
+	padding-top: 200px;
+}
+
+/* Navigation */
+
+#mainNav {
+	display: initial;
+}
+
+ul#drop {
+	display: none;
+}
+
+#naviTop {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+#naviTop h1 {
+	font-size: 20px;
+	padding: 20px;
+	background: black;
+}
+
+#naviTop h1 span {
+	font-size: 20px;
+	padding: 0 5px;
+	border: 1px solid #FF931E;
+	color: #FF931E;
+}
+
+#naviTop a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background: #FF931E;
+	padding: 20px;
+	border-top: 1px solid white;
+}
+
+#mainTop ul li:last-child {
+	border-bottom: 1px solid white;
+}
+
+#mainTop ul li a:hover {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #FF931E;
+	background: black;
+}
+
+/* Content */
+#myIntro {
+	text-align: center;
+}
+
+#myIntro h2 {
+	font-size: 40px;
+	line-height: 1;
+}
+
+#myIntro h1 {
+	margin-bottom: 50px;
+	font-size: 60px;
+	line-height: 1;
+}
+
+#myIntro p {
+	margin-bottom: 150px;
+}
+
+#naviTop #mainNav {
+ 	display: none;
+}
+
+#myIntro img {
+	border-radius: 100%;
+	margin-bottom: 50px;
+}
+
+/********************** ABOUT ME **********************/
+h4 + p {
+	padding-bottom: 50px;
+}
+
+#aboutMe img + p {
+	margin-bottom: 50px;
+}
+
+.fLImg {
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	/*margin-bottom: 20px;*/
+}
+
+.fRImg {
+	float: right;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+/********************** MY WORK **********************/
+ul#portNav li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+	background: white;
+	margin-left: 5px;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+
+ul#portNav li {
+	display: inline-block;
+}
+
+ul#portNav li a:hover {
+	background: #FF931E;
+	color: black;
+}
+
+ul#gallery img {
+	width: 100%;
+	border: 3px solid white;
+}
+
+ul#gallery img:hover {
+	border: 3px solid #FF931E;
+}
+
+ul#gallery li {
+	width: 49%;
+	display: inline-block;
+	margin-bottom: 20px;
+	line-height: 0;
+}
+
+#myWork input[type="button"] {
+	display: inline-block;
+	background: white;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	margin-bottom: 50px;
+}
+
+#myWork input[type="button"]:hover {
+	background: #FF931E;
+}
+
+/********************** SKILLS **********************/
+.skillCont {
+	width: 100%;
+	height: 30px;
+	background: #eee;
+	margin-bottom: 50px;
+   -moz-box-shadow:    inset 0 0 5px #ccc;
+   -webkit-box-shadow: inset 0 0 5px #CCC;
+   box-shadow:         inset 0 0 5px #ccc;
+}
+
+h6 + div  > div {
+	height: 30px;
+	background: #FF931E;
+   -moz-box-shadow:    inset 0 0 5px #BB500B;
+   -webkit-box-shadow: inset 0 0 5px #BB500B;
+   box-shadow:         inset 0 0 5px #BB500B;
+	display: block;
+}
+
+#html {
+	width: 90%;
+}
+
+#css {
+	width: 60%;
+}
+
+#JS {
+	width: 50%;
+}
+
+#DESIGN {
+	width: 75%;
+}
+
+#PYTHON {
+	width: 40%;
+}
+
+#PHP {
+	width: 30%;
+}
+/********************** CONTACT ME **********************/
+#contact h6 {
+	color: white;
+}
+
+input, select, option, textarea {
+	font-family: arial;
+}
+
+label {
+	color: white;
+	font-size: 18px;
+	display: block;
+}
+
+#contact input {
+	width: 100%;
+	color: black;
+	outline: none;
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+	border: 3px solid #FF931E;
+	margin-bottom: 10px;
+}
+
+select {
+	border: 3px solid #FF931E;
+	width: 100%;
+	padding: 10px;
+	height: 44px;
+	outline: none;
+	margin-bottom: 50px;
+}
+
+option, select {
+	text-align: right;
+}
+
+select:hover {
+	outline: none;
+}
+
+textarea {
+	width: 100%;
+	display: block;
+	resize: none;
+	height: 175px;
+	border: 3px solid #FF931E;
+	padding: 10px;
+	font-size: 16px;
+	outline: none;
+}
+
+textarea:hover {
+	outline: none;
+}
+
+#contact input:hover {
+	outline: none;
+}
+
+#contact button {
+	background: #FF931E;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+textarea, input {
+   -moz-box-shadow:    inset 0 0 5px #999;
+   -webkit-box-shadow: inset 0 0 5px #999;
+   box-shadow:         inset 0 0 5px #999;
+}
+
+
+/********************** MEDIA'S **********************/
+@media (min-width: 770px) {
+	.container {
+		padding: 0 20px;
+	}
+
+
+	#naviTop {
+		background: black;
+		background: -webkit-linear-gradient(to bottom, black, rgba(0,0,0,0.0));
+		background: -o-linear-gradient(to bottom, black, rgba(0,0,0,0.0));
+		background: -moz-linear-gradient(to bottom, black, rgba(0,0,0,0.0));
+		background: linear-gradient(to bottom, black, rgba(0,0,0,0.0));
+	}
+
+	.fL {
+		float: left;
+	}
+
+	.fR {
+		float: right;
+	}
+
+	.half {
+		width: 50%;
+	}
+
+	.half:nth-child(2n + 0) {
+		padding-right: 5%;
+		clear: left;
+	}
+
+	.half:nth-child(2n + 1) {
+		padding-left: 5%;
+		clear: right;
+	}
+
+	#naviTop h1 {
+		background: none;
+		padding: 20px 20px 20px 0;
+	}
+
+	#mainTop ul li {
+		display: inline-block;
+	}
+
+	#mainTop ul li a {
+		background: none;
+		border: none;
+		padding: 20px 0 20px 20px;
+	}
+
+	#mainTop ul li:last-child {
+		border: none;
+	}
+
+	#mainTop ul li a:hover {
+		background: none;
+		border: none;
+	}
+
+	#naviTop #drop a {
+		display: none;
+	}
+
+	#naviTop ul#mainNav {
+		display: inline-block;
+	}
+
+	ul#gallery li:nth-child(4n + 1) {
+		width: 24%;
+		margin-right: calc(1% - 4px);
+		margin-bottom: 10px;
+	}
+
+	ul#gallery li:nth-child(4n + 2) {
+		width: 24%;
+		margin-right: calc(1% - 4px);
+		margin-bottom: 10px;
+	}
+
+	ul#gallery li:nth-child(4n + 3) {
+		width: 24%;
+		margin-right: calc(1% - 4px);
+		margin-bottom: 10px;
+	}
+
+	ul#gallery li:nth-child(4n + 4) {
+		width: 24%;
+		margin-right: calc(1% - 4px);
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 1000px) {
+}
